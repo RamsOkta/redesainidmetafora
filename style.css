@@ -14,14 +14,14 @@ p.lead {
 }
 
 .hero-section {
-    background: url('/assets/img/background.jpg') no-repeat center center;
+    background: url('img/background.jpg') no-repeat center center;
     background-size: cover;
     padding: 120px 0;
     position: relative;
     color: white;
 }
 .footer-section {
-    background: url('/assets/img/footer.png') no-repeat center center;
+    background: url('img/footer.png') no-repeat center center;
     background-size: cover;
     padding: 120px 0;
     position: relative;
