@@ -1,0 +1,583 @@
+/* Global Styles */
+body {
+    font-family: 'Inter', sans-serif; /* Menggunakan font Inter untuk body */
+}
+
+h1, h2 {
+    font-family: 'Racing Sans One', cursive; /* Menggunakan font Racing Sans One untuk heading */
+}
+
+p.lead {
+    font-family: 'Viga', sans-serif; /* Menggunakan font Viga untuk paragraf lead */
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.hero-section {
+    background: url('/assets/img/background.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 120px 0;
+    position: relative;
+    color: white;
+}
+.footer-section {
+    background: url('/assets/img/footer.png') no-repeat center center;
+    background-size: cover;
+    padding: 120px 0;
+    position: relative;
+    color: white;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+}
+/* .our-client-section {
+    background-color: #f8f9fa;
+}
+
+.our-client-section h2 {
+    font-family: 'Racing Sans One', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.client-box {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.client-box img {
+    max-height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.client-name {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: #333;
+} */
+.our-client-section {
+    background-color: #f8f9fa;
+}
+
+.our-client-section h2 {
+    font-family: 'Racing Sans One', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.client-carousel {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 20px;
+    -ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+}
+
+
+.client-carousel::-webkit-scrollbar {
+display: none;  /* Chrome, Safari, Opera */
+}
+
+.client-carousel .row {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.client-box {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    padding: 10px;
+    width: 181px;
+    height: 227px;
+    display: inline-block;
+    flex: 0 0 auto;
+    overflow: hidden;
+}
+
+
+.client-logo {
+    max-height: 130px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.client-name {
+    font-size: 0.9rem; /* Kurangi sedikit ukuran font agar lebih pas */
+    color: #333;
+    margin: 0;
+    white-space: normal; /* Izinkan teks untuk membungkus */
+    word-wrap: break-word; /* Membungkus kata jika terlalu panjang */
+    text-overflow: ellipsis; /* Tambahkan ellipsis jika teks terlalu panjang */
+    overflow: hidden;
+    height: 50px; /* Tambahkan tinggi untuk mengakomodasi 2 baris teks */
+    line-height: 1.2; /* Sesuaikan jarak antar baris */
+    display: block;
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #000;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.group-choose {
+    text-align: center;
+    background-color: #08207c;
+    border-radius: 20px;
+    padding: 30px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.choose-idmetafora {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.group-item {
+    
+    border-radius: 20px;
+    padding: 20px;
+    flex: 1;
+    max-width: 30%;
+   
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    width: 278px;
+    height: 280px;
+    margin-bottom: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.company-icon {
+    background-image: url('/assets/img/company.png');
+}
+
+.worker-icon {
+    background-image: url('/assets/img/corporate.png');
+}
+
+.users-icon {
+    background-image: url('/assets/img/people.png');
+}
+
+.description {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-section {
+    background-color: #000000; /* Warna latar belakang hitam */
+    padding: 50px 0;
+    color: #ffffff; /* Warna teks putih */
+}
+
+.footer-section .lead {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    margin-bottom: 5px;
+}
+
+.company-description {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #822fb2; /* Warna ungu saat hover */
+}
+
+.contact-info {
+    font-size: 14px;
+}
+
+.contact-info a {
+    color: #ffffff; /* Warna teks putih */
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .text-md-start {
+        text-align: left !important;
+    }
+    
+    .text-md-end {
+        text-align: left !important;
+    }
+}
+
+
+.erp-ecosystem-section {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+
+.erp-ecosystem-section h2 {
+    font-family: 'Racing Sans One', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #08207c; /* Sesuaikan warna heading */
+}
+
+.erp-ecosystem-section .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.erp-ecosystem-section .card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.erp-ecosystem-section .card:hover {
+    transform: translateY(-10px);
+}
+
+.erp-ecosystem-section .card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.erp-ecosystem-section .card h3 {
+    font-size: 1.5rem;
+    color: #08207c;
+    margin-bottom: 15px;
+}
+
+.erp-ecosystem-section .card p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* workwlof */
+.workflow-section {
+    background: linear-gradient(to right, #000000, #1c1f65, #0b67cd);
+    color: #ffffff;
+    padding: 50px 0;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.workflow-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+.workflow-title span {
+    color: #b7daf8;
+}
+
+.workflow-text {
+    margin-left: 20px;
+}
+
+.workflow-subtitle {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.workflow-description {
+    font-size: 1.2rem;
+}
+
+.workflow-image {
+    width: 210px;
+    height: 210px;
+}
+
+/* Consultant */
+.consultant-section {
+    background-color: #2a2f85;
+    padding: 20px; /* Kamu bisa sesuaikan padding sesuai kebutuhan */
+    border-radius: 20px;
+    color: #ffffff;
+    margin: 20px auto; /* Memastikan elemen tetap di tengah secara horizontal */
+    width: 1105px; /* Lebar diatur menjadi 1105px */
+    height: 452px; /* Tinggi diatur menjadi 452px */
+}
+
+.consultant-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.consultant-title span {
+    color: #5ed8fb;
+}
+
+
+.consultant-carousel {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 20px;
+    position: relative; /* Tambahkan positioning relatif */
+    top: 30px;          /* Geser ke bawah */
+    left: 64px;         /* Geser ke kanan */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.consultant-carousel::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari, Opera */
+}
+
+
+.consultant-carousel .row {
+    display: flex;
+    flex-wrap: nowrap;
+    gap:300px; /* Jarak antar box */
+}
+
+.trusted-box {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 498px;   /* Lebar disesuaikan */
+    height: 220px;  /* Tinggi disesuaikan */
+    display: inline-block;
+    overflow: hidden;
+}
+
+.trusted-icon {
+    margin-bottom: 15px;
+}
+
+.trusted-image {
+    width: 50px;
+    height: 50px;
+}
+
+.trusted-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.trusted-description {
+    font-size: 1rem;
+    color: #333;
+    margin: 0;
+    text-align: center;
+    white-space: normal;
+}
+
+.consultant-illustration {
+    width: 300px;
+    height: 312px;
+    margin-top: 20px;
+    position: relative; /* Atau absolute */
+    /* left: 50px; Geser ke kanan */
+    right: 20px; /*Geser ke kiri*/
+    /* top: 50px; Geser ke bawah */
+    bottom: 50px;   /* Geser ke atas*/
+}
+
+
+/* Testimonial Section */
+.testimonial-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.testimonial {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#testimonial1:checked ~ .testimonial:nth-of-type(2),
+#testimonial2:checked ~ .testimonial:nth-of-type(3) {
+    display: flex;
+}
+
+.testimonial-arrows {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.arrow-left, .arrow-right {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.arrow-left:hover, .arrow-right:hover {
+    background-color: #555;
+}
+
+
+
+
+
+
+
+
+
+
+/* CSS for ERP Ecosystem Section */
+.erp-ecosystem-section {
+    background-color: #f8f9fa;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.erp-item {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.erp-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.erp-item h5 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.erp-item p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+
+
+
+.btn-success {
+    background-color: #25D366;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.navbar {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar-brand img {
+    width: 180px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-right: 25px;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Background berubah menjadi solid saat scroll */
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: background-color 0.3s ease;
+}
