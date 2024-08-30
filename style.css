@@ -14,14 +14,14 @@ p.lead {
 }
 
 .hero-section {
-    background: url('/assets/img/background.jpg') no-repeat center center;
+    background: url('img/background.jpg') no-repeat center center;
     background-size: cover;
     padding: 170px 0;
     position: relative;
     color: white;
 }
 .footer-section {
-    background: url('/assets/img/footer.png') no-repeat center center;
+    background: url('img/footer.png') no-repeat center center;
     background-size: cover;
     padding: 120px 0;
     position: relative;
@@ -212,15 +212,15 @@ display: none;  /* Chrome, Safari, Opera */
 }
 
 .company-icon {
-    background-image: url('/assets/img/company.png');
+    background-image: url('img/company.png');
 }
 
 .worker-icon {
-    background-image: url('/assets/img/corporate.png');
+    background-image: url('img/corporate.png');
 }
 
 .users-icon {
-    background-image: url('/assets/img/people.png');
+    background-image: url('img/people.png');
 }
 
 .description {
