@@ -203,8 +203,8 @@ display: none;  /* Chrome, Safari, Opera */
 }
 
 .icon {
-    width: 220px;
-    height: 220px;
+    width: 200px;
+    height: 200px;
     margin-bottom: 15px;
     background-size: contain;
     background-repeat: no-repeat;
